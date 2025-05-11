@@ -54,4 +54,7 @@ print(f"Is Digit: {is_digit}")
 is_alnum = greeting.isalnum()
 print(f"Is Alphanumeric: {is_alnum}")
 
-
+#Using dir() to list all attributes and methods of a string
+print("String Methods and Attributes: ", dir(greeting))
+#Using help() to get documentation on a specific string method  
+print(help(greeting.upper))
