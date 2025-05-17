@@ -42,3 +42,46 @@ if pin == correct_pin:
 else:
     print("Too many incorrect attempts. Access denied.")
 
+
+# For loops
+# for loops are used to iterate over a sequence (like a list, tuple, or string) or other iterable objects.
+# The syntax is:
+# for variable in iterable:
+#     # code to execute
+# Example:
+items = ["shoes", "socks", "shirts", "pants","knife","fork","spoon","liquid"] 
+for item in items:
+    if item == "knife" or item == "liquid":
+        print(f"Cannot pack {item} - not allowed on the plane")
+    else:
+        print(f"Packing {item}")
+        
+# using in to check if something exists in a list
+# Example:
+
+items = ["shoes", "socks", "shirts", "pants","fork","spoon",]
+banned_items = ["knife", "liquid"]
+for item in items:
+    if item in banned_items:
+        print(f"Cannot pack {item} - not allowed on the plane")
+    else:
+        print(f"Packing {item}")
+
+# modifying it so that it counts how many items were packed vs how many were banned
+
+items = ["shoes", "socks", "shirts", "pants", "knife", "fork", "spoon", "liquid"]
+banned_items = ["knife", "liquid"]
+
+items_banned = 0
+items_packed = 0
+
+for item in items:
+    if item in banned_items:
+        items_banned += 1
+    else:
+        items_packed += 1
+
+print(f"Total items banned: {items_banned}")
+print(f"Total items packed: {items_packed}")
+
+    
