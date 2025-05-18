@@ -84,4 +84,28 @@ for item in items:
 print(f"Total items banned: {items_banned}")
 print(f"Total items packed: {items_packed}")
 
+# working with nested loops.
+# Nested loops are loops inside other loops.
+# syntax:
+# for outer_variable in outer_iterable:
+#     for inner_variable in inner_iterable:
+home = {
+    "Living Room": ["Couch", "TV", "Coffee Table"],
+    "Bedroom": ["Bed", "Wardrobe", "Lamp"],
+    "Kitchen": ["Fridge", "Oven", "Sink"]
+}
+
+for room in home:
+    print(f"\nFurniture found in {room}:")
+    
+    for furniture in home[room]:
+        print(f" - {furniture}")
+    
+    total_items = len(home[room])
+    print(f"Total items in {room}: {total_items}")
+# The break statement
+# The break statement is used to exit a loop prematurely.
+# Example:
+
+
     
